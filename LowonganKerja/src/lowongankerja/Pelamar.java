@@ -5,33 +5,20 @@
  */
 package lowongankerja;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author ISMA
  */
 public class Pelamar extends Orang {
-    private List<String> skill = new ArrayList<>();
     private BerkasLamaran berkas;
-    private String pengalaman;
-    private String lulusan;
+    private String id;
     
-    public void setSkill (String skill){
-        this.skill.add(skill);
-    }
-	
-	public String getSkill(int i){
-        return skill.get(i);
+    public void setId (String id) {
+        this.id = id;
     }
     
-    public void setPengalaman (String pengalaman){
-        this.pengalaman = pengalaman;
-    }
-	
-    public String getPengalaman (){
-        return pengalaman;
+    public String getId(){
+        return id;
     }
     
     public void createBerkas (String idBerkas){
